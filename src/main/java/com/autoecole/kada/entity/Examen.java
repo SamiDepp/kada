@@ -1,10 +1,15 @@
 package com.autoecole.kada.entity;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "examen")
+@Data
+@NoArgsConstructor
 public class Examen {
 
     @Id
@@ -17,7 +22,7 @@ public class Examen {
 
     @ManyToOne
     @JoinColumn(name = "id_condidat")
-    private Condidat condidat;
+    private Candidat candidat;
 
 
 }

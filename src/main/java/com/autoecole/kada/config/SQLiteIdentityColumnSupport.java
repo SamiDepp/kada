@@ -1,4 +1,4 @@
-package com.autoecole.kada.repository;
+package com.autoecole.kada.config;
 
 import org.hibernate.MappingException;
 import org.hibernate.dialect.identity.IdentityColumnSupportImpl;
