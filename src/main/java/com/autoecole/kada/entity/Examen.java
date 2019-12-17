@@ -1,10 +1,13 @@
 package com.autoecole.kada.entity;
 
+import com.autoecole.kada.model.Dicipline;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "examen")
@@ -15,14 +18,13 @@ public class Examen {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private Date datedebutExam;
-    private Date datefinExam;
-    private String type;
-    private Boolean resultat;
+    private Date date;
+    private String adresse;
+    private Dicipline dicipline;
 
-    @ManyToOne
-    @JoinColumn(name = "id_condidat")
-    private Candidat candidat;
+
+    @ManyToMany(mappedBy = "examens")
+    private List<Candidat> candidats;
 
 
 }
