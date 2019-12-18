@@ -16,7 +16,6 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "candidats", path = "candidats")
-//@CrossOrigin(origins = "http://localhost:4200")
 //@Repository
 public interface CandidatRepository extends JpaRepository<Candidat, Integer> {
 
