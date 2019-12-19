@@ -1,6 +1,7 @@
 package com.autoecole.kada.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.domain.AbstractPersistable;
@@ -43,6 +44,7 @@ public class Candidat {
 	@JoinTable(name = "candidat_examen",
 			joinColumns = @JoinColumn(name = "candidat_id", referencedColumnName = "id"),
 			inverseJoinColumns = @JoinColumn(name = "examen_id", referencedColumnName = "id"))
+	@JsonIgnore
 	private List<Examen> examens;
 
 

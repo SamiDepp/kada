@@ -1,4 +1,4 @@
-package com.autoecole.kada.config;
+package com.autoecole.kada.config.db;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
