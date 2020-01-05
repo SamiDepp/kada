@@ -1,12 +1,9 @@
 package com.autoecole.kada.entity;
 
-import com.autoecole.kada.model.Dicipline;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -21,7 +18,7 @@ public class Examen {
     private Integer id;
     private Date date;
     private String adresse;
-    private Dicipline dicipline;
+    private String dicipline;
 
 
     /*  to avoid Lazy Loading Error

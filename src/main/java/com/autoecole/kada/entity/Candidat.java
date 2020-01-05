@@ -26,9 +26,9 @@ public class Candidat {
 	private String nom ;
 	private String prenom ;
 	private String nomJF ;
-//	@Lob
-//	@Size(max = 2000000000)
-//	private byte[] image;
+
+
+	private String image;
 	private Date dateNaiss;
 	private String sexe;
 	private String adresse;
