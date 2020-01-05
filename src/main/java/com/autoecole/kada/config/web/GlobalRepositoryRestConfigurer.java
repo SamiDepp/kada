@@ -8,9 +8,6 @@ import org.springframework.data.rest.core.mapping.ExposureConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.http.HttpMethod;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
 
 @Configuration
 public class GlobalRepositoryRestConfigurer implements RepositoryRestConfigurer {
